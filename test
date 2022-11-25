@@ -68,8 +68,8 @@ function RUN_FUNCTION(name, extension, configOpt)
         Loader.Name = "Loader"
         Loader.Parent = BlueXLoader
         Loader.AnchorPoint = Vector2.new(0.5, 0.5)
-        Loader.BackgroundColor3 = Color3.fromRGB(11, 3, 69)
-        Loader.BorderColor3 = Color3.fromRGB(11, 3, 69)
+        Loader.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+        Loader.BorderColor3 = Color3.fromRGB(0, 0, 0)
         Loader.BorderSizePixel = 2
         Loader.Position = UDim2.new(0.5, 0, 0.5, 0)
         Loader.Size = UDim2.new(0, 0,  0, 0)
@@ -116,7 +116,7 @@ function RUN_FUNCTION(name, extension, configOpt)
 
         Bar.Name = "Bar"
         Bar.Parent = LoadBar
-        Bar.BackgroundColor3 = Color3.fromRGB(9, 18, 62)
+        Bar.BackgroundColor3 = Color3.fromRGB(79, 10, 136)
         Bar.BorderSizePixel = 0
         Bar.Size = UDim2.new(0, 0, 1, 0)
         Bar.ZIndex = 4
@@ -187,19 +187,19 @@ function RUN_FUNCTION(name, extension, configOpt)
         wait(1)
         setSize(20)
         
-        for i = 1, 10 do 
+        for i = 1, 2 do 
             Message.Text = "Checking ."
             wait(1)
             Message.Text = "Checking . ."
             wait(1)
             Message.Text = "Checking . . ."
-            wait(10)
+            wait(5)
             Message.Text = "Loading Services ."
             wait(1)
             Message.Text = "Loading Services . ."
             wait(1)
             Message.Text = "Loading Services . . ."
-            wait(10)
+            wait(5)
             Message.Text = "Loading Assets ."
             wait(1)
             Message.Text = "Loading Assets . ."
