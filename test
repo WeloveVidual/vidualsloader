@@ -18,35 +18,6 @@ function createTween(Object,setup,settings)
 	Anim:Play();
 	return Anim;
 end;
-
-function RUN_FUNCTION(name, extension, configOpt)
-    local settings = configOpt;
-    local PATH_URL = settings.URL or nil;
-    local GAME_NAME = "";
-    
-    local success = pcall(function()
-        game:HttpGet(PATH_URL)
-    end);
-
-     local DecodedTable;
-     if (success) then
-        if extension == "lua" then 
-            DecodedTable = loadstring(game:HttpGet(PATH_URL))()
-        elseif extension == "json" then
-            DecodedTable = game:GetService("HttpService"):JSONDecode(game:HttpGet(PATH_URL))
-        end
-        
-        settings.Executable = ""
-        for i,v in pairs(DecodedTable) do
-            if (game.PlaceId == tonumber(i) and v.name and v.Working) then
-                local connection = pcall(function() 
-                    settings.Executable = game:HttpGet(v.Script) 
-                end);
-                
-                GAME_NAME = v.name
-            end
-        end
-    end
     
     spawn(function()
         local BlueXLoader = Instance.new("ScreenGui")
@@ -97,7 +68,7 @@ function RUN_FUNCTION(name, extension, configOpt)
         Title.Size = UDim2.new(1, -6, -0.262604743, 55)
         Title.ZIndex = 4
         Title.Font = Enum.Font.SourceSansBold
-        Title.Text = name or "BlueX HUB | Loader"
+        Title.Text = "Vidual Hub | Loader"
         Title.TextColor3 = Color3.fromRGB(197, 197, 197)
         Title.TextSize = 22.000
         Title.TextTransparency = 1
@@ -136,7 +107,7 @@ function RUN_FUNCTION(name, extension, configOpt)
         Message.SizeConstraint = Enum.SizeConstraint.RelativeXX
         Message.ZIndex = 4
         Message.Font = Enum.Font.SourceSansItalic
-        Message.Text = settings.StartMessage or "Welcome, " .. game:GetService("Players").LocalPlayer.Name
+        Message.Text = "Welcome, " .. game:GetService("Players").LocalPlayer.Name
         Message.TextColor3 = Color3.fromRGB(197, 197, 197)
         Message.TextSize = 22.000
         Message.TextTransparency = 1
@@ -217,7 +188,7 @@ function RUN_FUNCTION(name, extension, configOpt)
         Message.Text = "Game Was Found!"
         wait(1)
         setSize(80)
-        Message.Text = GAME_NAME
+        Message.Text = "Error: No Bitches Found"
         wait(1)
         setSize(100)
         
@@ -253,8 +224,5 @@ function RUN_FUNCTION(name, extension, configOpt)
             TIME = 2
         }).Completed:Wait(1)
     
-        loadstring(settings.Executable)()
         BlueXLoader:Destroy()
     end)
-end
-return RUN_FUNCTION;
