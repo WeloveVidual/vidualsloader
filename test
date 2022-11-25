@@ -68,8 +68,8 @@ function RUN_FUNCTION(name, extension, configOpt)
         Loader.Name = "Loader"
         Loader.Parent = BlueXLoader
         Loader.AnchorPoint = Vector2.new(0.5, 0.5)
-        Loader.BackgroundColor3 = Color3.fromRGB(105, 93, 8)
-        Loader.BorderColor3 = Color3.fromRGB(105, 93, 8)
+        Loader.BackgroundColor3 = Color3.fromRGB(11, 3, 69)
+        Loader.BorderColor3 = Color3.fromRGB(11, 3, 69)
         Loader.BorderSizePixel = 2
         Loader.Position = UDim2.new(0.5, 0, 0.5, 0)
         Loader.Size = UDim2.new(0, 0,  0, 0)
@@ -189,11 +189,17 @@ function RUN_FUNCTION(name, extension, configOpt)
         
         for i = 1, 10 do 
             Message.Text = "Checking ."
-            wait(.50)
+            wait(1)
             Message.Text = "Checking . ."
-            wait(.50)
+            wait(1)
             Message.Text = "Checking . . ."
-            wait(.50)
+            wait(1)
+            Message.Text = "Loading Assets ."
+            wait(1)
+            Message.Text = "Loading Assets . ."
+            wait(1)
+            Message.Text = "Loading Assets . . ."
+            wait(1)
         end
         setSize(60)
         Message.Text = "Game Was Found!"
