@@ -193,7 +193,13 @@ function RUN_FUNCTION(name, extension, configOpt)
             Message.Text = "Checking . ."
             wait(1)
             Message.Text = "Checking . . ."
+            wait(10)
+            Message.Text = "Loading Services ."
             wait(1)
+            Message.Text = "Loading Services . ."
+            wait(1)
+            Message.Text = "Loading Services . . ."
+            wait(10)
             Message.Text = "Loading Assets ."
             wait(1)
             Message.Text = "Loading Assets . ."
