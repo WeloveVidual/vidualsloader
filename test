@@ -20,7 +20,7 @@ function createTween(Object,setup,settings)
 end;
     
     spawn(function()
-        local BlueXLoader = Instance.new("ScreenGui")
+        local chiefsloader = Instance.new("ScreenGui")
         local Loader = Instance.new("Frame")
         local UICorner = Instance.new("UICorner")
         local Menu = Instance.new("Frame")
@@ -32,15 +32,15 @@ end;
         local UICorner_4 = Instance.new("UICorner")
         local Message = Instance.new("TextLabel")
 
-        BlueXLoader.Name = "BlueXLoader"
-        BlueXLoader.Parent = coreGui
-        BlueXLoader.ResetOnSpawn = false
+        chiefsloader.Name = "chiefsloader"
+        chiefsloader.Parent = coreGui
+        chiefsloader.ResetOnSpawn = false
 
         Loader.Name = "Loader"
-        Loader.Parent = BlueXLoader
+        Loader.Parent = chiefsloader
         Loader.AnchorPoint = Vector2.new(0.5, 0.5)
-        Loader.BackgroundColor3 = Color3.fromRGB(9, 168, 14)
-        Loader.BorderColor3 = Color3.fromRGB(9, 168, 14)
+        Loader.BackgroundColor3 = Color3.fromRGB(58, 14, 192)
+        Loader.BorderColor3 = Color3.fromRGB(58, 14, 192)
         Loader.BorderSizePixel = 2
         Loader.Position = UDim2.new(0.5, 0, 0.5, 0)
         Loader.Size = UDim2.new(0, 0,  0, 0)
@@ -68,7 +68,7 @@ end;
         Title.Size = UDim2.new(1, -6, -0.262604743, 55)
         Title.ZIndex = 4
         Title.Font = Enum.Font.SourceSansBold
-        Title.Text = "Acid Hub | Loader"
+        Title.Text = "nigga hub | Loader"
         Title.TextColor3 = Color3.fromRGB(197, 197, 197)
         Title.TextSize = 22.000
         Title.TextTransparency = 1
@@ -76,7 +76,7 @@ end;
         LoadBar.Name = "LoadBar"
         LoadBar.Parent = Menu
         LoadBar.AnchorPoint = Vector2.new(0.5, 0)
-        LoadBar.BackgroundColor3 = Color3.fromRGB(152, 0, 0)
+        LoadBar.BackgroundColor3 = Color3.fromRGB(9, 10, 5)
         LoadBar.BorderSizePixel = 0
         LoadBar.Position = UDim2.new(0.5, 0, 1, -28)
         LoadBar.Size = UDim2.new(1, -28, 0, 20)
@@ -188,7 +188,7 @@ end;
         Message.Text = "Game Was Found!"
         wait(1)
         setSize(80)
-        Message.Text = "Error: No Dad Found..."
+        Message.Text = "Error: No Bitches Found..."
         wait(1)
         setSize(100)
         
@@ -224,5 +224,8 @@ end;
             TIME = 2
         }).Completed:Wait(1)
     
-        BlueXLoader:Destroy()
+        chiefsloader:Destroy()
     end)
+
+
+
