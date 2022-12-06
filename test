@@ -39,8 +39,8 @@ end;
         Loader.Name = "Loader"
         Loader.Parent = chiefsloader
         Loader.AnchorPoint = Vector2.new(0.5, 0.5)
-        Loader.BackgroundColor3 = Color3.fromRGB(58, 14, 192)
-        Loader.BorderColor3 = Color3.fromRGB(58, 14, 192)
+        Loader.BackgroundColor3 = Color3.fromRGB(255, 247, 0)
+        Loader.BorderColor3 = Color3.fromRGB(255, 247, 0)
         Loader.BorderSizePixel = 2
         Loader.Position = UDim2.new(0.5, 0, 0.5, 0)
         Loader.Size = UDim2.new(0, 0,  0, 0)
@@ -68,7 +68,7 @@ end;
         Title.Size = UDim2.new(1, -6, -0.262604743, 55)
         Title.ZIndex = 4
         Title.Font = Enum.Font.SourceSansBold
-        Title.Text = "nigga hub | Loader"
+        Title.Text = "Pika Hub | Loader"
         Title.TextColor3 = Color3.fromRGB(197, 197, 197)
         Title.TextSize = 22.000
         Title.TextTransparency = 1
@@ -76,7 +76,7 @@ end;
         LoadBar.Name = "LoadBar"
         LoadBar.Parent = Menu
         LoadBar.AnchorPoint = Vector2.new(0.5, 0)
-        LoadBar.BackgroundColor3 = Color3.fromRGB(9, 10, 5)
+        LoadBar.BackgroundColor3 = Color3.fromRGB(3, 212, 35)
         LoadBar.BorderSizePixel = 0
         LoadBar.Position = UDim2.new(0.5, 0, 1, -28)
         LoadBar.Size = UDim2.new(1, -28, 0, 20)
@@ -226,6 +226,3 @@ end;
     
         chiefsloader:Destroy()
     end)
-
-
-
